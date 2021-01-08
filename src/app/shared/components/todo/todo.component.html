@@ -1,0 +1,11 @@
+<div>
+    <h1>TODO</h1>
+    <div *ngFor="let todo of todos; let i = index">
+        <div class="todo-item">
+            <div>{{i + 1}}</div>
+            <button *ngIf="!todo.completed" (click)="completeClicked(todo)">Complete</button>
+            <div [ngStyle]="{'text-decoration' : todo.completed ? 'line-through' : 'none'}">{{todo.task}}</div>
+            <div>X</div>
+        </div>
+    </div>
+</div>
