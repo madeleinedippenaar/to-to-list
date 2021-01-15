@@ -1,11 +1,18 @@
 <div>
     <h1>TODO</h1>
-    <div *ngFor="let todo of todos; let i = index">
+    <h3>A place to store your todos</h3>
+    <input [(ngModel)]="filterValue" (keydown)="filterTodos()">
+    <div *ngFor="let todo of filteredTodos; let i = index">
         <div class="todo-item">
-            <div>{{i + 1}}</div>
+            <div>{{i + 1}}.</div>
             <button *ngIf="!todo.completed" (click)="completeClicked(todo)">Complete</button>
-            <div [ngStyle]="{'text-decoration' : todo.completed ? 'line-through' : 'none'}">{{todo.task}}</div>
-            <div>X</div>
+            <div [ngStyle]="{'text-decoration' : todo.completed ? 'line-through' : 'none'}">
+                {{todo.task}}
+            </div>
+            <div (click)="deleteTodo(i)">X</div>
         </div>
     </div>
+    
+    <input [(ngModel)]="taskName" placeholder="Add your todo" />
+    <button (click)="addTodo()">Add</button>
 </div>
