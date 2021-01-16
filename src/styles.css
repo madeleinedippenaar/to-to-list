@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html { 
+    background-image: linear-gradient(to right, #f857a6, #ff5858);
+    display: flex;
+    justify-content: center;
+    font-family: Open Sans;
+    font-weight: 300;
+ }
+
+.todo-form {
+    width: 800px;
+    padding: 20px;
+    Box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}

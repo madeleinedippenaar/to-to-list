@@ -1,3 +1,36 @@
 .todo-item {
     display: flex;
 }
+
+.todo-form {
+    background-color: white;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+    padding:5px;
+}
+
+.add-todo {
+    width: 100%;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.complete-button{
+    color: #ff69b4;
+    background-color: white;
+    border: 1px solid #ff69b4;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+
+input {
+    width: 100%;
+}
