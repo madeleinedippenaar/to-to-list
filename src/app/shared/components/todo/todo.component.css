@@ -33,4 +33,6 @@ h3 {
 
 input {
     width: 100%;
+    color: #bbb;
+    border: 1px solid #eee;
 }
