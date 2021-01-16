@@ -35,4 +35,5 @@ input {
     width: 100%;
     color: #bbb;
     border: 1px solid #eee;
+    outline: none;
 }
